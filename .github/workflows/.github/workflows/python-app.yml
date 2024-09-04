@@ -1,0 +1,38 @@
+name: Python application
+
+on:
+  push:
+    branches:
+      - main  # Esegui l'azione su ogni push al branch "main"
+  pull_request:
+    branches:
+      - main  # Esegui l'azione su ogni pull request verso il branch "main"
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out repository code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'  # Sostituisci con la versione di Python che stai usando
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Run tests
+      run: |
+        python -m unittest discover  # Esegui tutti i test nella directory
+
+    - name: Generate Code Coverage Report
+      run: |
+        pip install coverage
+        coverage run -m unittest discover
+        coverage report
