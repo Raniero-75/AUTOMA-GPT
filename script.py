@@ -1,14 +1,12 @@
-Ecco un semplice codice Python per eseguire le moltiplicazioni:
+Ecco un semplice codice Python per fare delle somme:
 
 ```python
-def moltiplicazione(num1, num2):
-    risultato = num1 * num2
-    return risultato
+# Funzione per eseguire una somma
+def somma(num1, num2):
+    return num1 + num2
 
-num1 = int(input("Inserisci il primo numero: "))
-num2 = int(input("Inserisci il secondo numero: "))
-
-print("Il risultato della moltiplicazione è: ", moltiplicazione(num1, num2))
+# Test della funzione
+print(somma(5, 7))  # Stampa 12
 ```
 
-In questo codice, abbiamo definito una funzione chiamata `moltiplicazione` che prende due numeri e ritorna il loro prodotto. Quindi, chiediamo all'utente di inserire due numeri e li moltiplichiamo utilizzando la nostra funzione `moltiplicazione`. Infine, stampiamo il risultato.
+Questo codice definisce una funzione `somma(num1, num2)` che prende due numeri come argomenti e ritorna la loro somma. Poi testa la funzione sommando 5 e 7, dovrebbe stampare '12'.
