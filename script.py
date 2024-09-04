@@ -1,8 +1,13 @@
-def somma(n1, n2):
-    return n1 + n2
+Ecco un esempio di funzione che esegue la moltiplicazione in Python:
 
-# Inserisci i due numeri che vuoi sommare
-num1 = int(input("Inserisci il primo numero: "))
-num2 = int(input("Inserisci il secondo numero: "))
+```python
+def moltiplica(n1, n2):
+    return n1 * n2
 
-print("La somma è: ", somma(num1, num2))
+# Utilizzo della funzione
+print(moltiplica(5, 3))
+```
+
+In questo esempio, la funzione "moltiplica" prende due numeri come input (n1, n2) e restituisce il risultato della loro moltiplicazione. 
+
+Usando la funzione `print` si stampa a video il risultato della moltiplicazione tra 5 e 3.
