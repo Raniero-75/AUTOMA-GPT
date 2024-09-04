@@ -1,8 +1,8 @@
-Ecco uno script Python molto semplice che farà esattamente questo:
+def somma(n1, n2):
+    return n1 + n2
 
-```python
-for i in range(1, 11):
-    print(i)
-```
+# Inserisci i due numeri che vuoi sommare
+num1 = int(input("Inserisci il primo numero: "))
+num2 = int(input("Inserisci il secondo numero: "))
 
-Questo script utilizza un ciclo "for" per iterare su un range di numeri da 1 a 10 (l'upper bound 11 in `range(1, 11)` è escluso). Ad ogni iterazione, stampa il numero corrente.
+print("La somma è: ", somma(num1, num2))
