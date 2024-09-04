@@ -1,8 +1,8 @@
-Ecco uno script Python molto semplice che farà esattamente quello:
+Ecco uno script Python molto semplice che farà esattamente questo:
 
 ```python
 for i in range(1, 11):
     print(i)
 ```
 
-Nello script, utilizziamo la funzione built-in `range()` per generare un intervallo di numeri da 1 a 10. Il ciclo `for` scorre poi ogni numero in questo intervallo e utilizza la funzione `print()` per stamparlo.
+Questo script utilizza un ciclo "for" per iterare su un range di numeri da 1 a 10 (l'upper bound 11 in `range(1, 11)` è escluso). Ad ogni iterazione, stampa il numero corrente.
